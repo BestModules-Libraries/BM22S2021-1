@@ -1,13 +1,21 @@
 <div align=center>
-<img src="https://github.com/BestModules-Libraries/img/blob/main/BMS56M605_V1.0.png" width="320" height="240"> 
+<img src="https://github.com/BestModules-Libraries/img/blob/main/BM22S2021-1_BMA26M202_V1.0.png" width="320" height="240"> 
 </div> 
 
-BMS56M605 
+BM22S2021-1
 ===========================================================
 
-The BMS56M605 is a gyroscope and accelerometer module from Best Modules, which uses the I2C communication method. This document provides the description of the BMS56M605 Arduino Lib functions and how to install the Arduino Lib. The example demonstrates the functions of reading the 6-axis data and motion detection.
+#### Applicable types:
+<div align=center>
 
-This library can be installed via the Arduino Library manager. Search for **BMS56M605**. 
+|Part No.   |Description                   |
+|:---------:|:----------------------------:|
+|BM22S2021-1||
+|BMA26M202  |  |
+
+</div> 
+
+This library can be installed via the Arduino Library manager. Search for **BM22S2021-1**. 
 
 Repository Contents
 -------------------
@@ -20,7 +28,7 @@ Repository Contents
 Documentation 
 -------------------
 
-* **[BMS56M605 Arduino Library V1.0.1 Description v100]( https://www.bestmodulescorp.com/bms56m605.html#tab-product2 )** - Arduino Library Description.
+* **[BM22S2021-1 Arduino Library V1.0.1 Description v100]( https://www.bestmodulescorp.com/bm22s2021-1.html#tab-product2 )** - Arduino Library Description.
 
 Version History  
 -------------------
