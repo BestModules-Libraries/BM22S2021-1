@@ -1,9 +1,8 @@
 /*****************************************************************
   File:             BM22S2021-1cpp
-  Author:           BESTMODULES
+  Author:           BEST MODULES CORP.
   Description:      Communication and operation function with module
-  History：
-  V1.0.1-- initial version；2022-11-15；Arduino IDE : v1.8.13
+  Version:          V1.0.2   -- 2025-05-29
 ******************************************************************/
 #include  "BM22S2021-1.h"
 
@@ -40,8 +39,8 @@ BM22S2021_1::BM22S2021_1(uint8_t statusPin,uint8_t rxPin, uint8_t txPin)
 }
 /**********************************************************
 Description: Set serial baud rate
-Parameters:  uartBaud：9600(default)
-Return:      none
+Parameters:  void
+Return:      void
 Others:
 **********************************************************/
 void BM22S2021_1::begin()
@@ -58,8 +57,8 @@ void BM22S2021_1::begin()
 }
 /**********************************************************
 Description: Get STATUS pin level
-Parameters: None
-Return: None
+Parameters: void
+Return: STA pin Level
 Others: None
 **********************************************************/
 uint8_t BM22S2021_1::getSTATUS()
@@ -70,7 +69,7 @@ uint8_t BM22S2021_1::getSTATUS()
 /**********************************************************
 Description: Query the FW version
              The FW version number and production date are both 8421 BCD code.
-Parameters:  none
+Parameters:  void
 Return:      0:read error
              data:16bit FWVer
 Others:
@@ -143,7 +142,7 @@ uint8_t BM22S2021_1::requestInfoPackage(uint8_t buff[])
 }
 /**********************************************************
 Description: Determine whether it is the data packet sent by the module
-Parameters:  none
+Parameters:  void
 Return:      1:Have 41/21 data bytes
              0:no data
 Others:     
@@ -257,7 +256,7 @@ if(autoTxMode==0x81)
 /**********************************************************
 Description: Read the data automatically output by the module
 Parameters:   buff:41/21 byte
-Return:    
+Return:      void
 Others:     
 **********************************************************/
 void BM22S2021_1::readInfoPackage(uint8_t array[])
@@ -354,7 +353,7 @@ uint8_t BM22S2021_1::readRunningVariables(uint8_t addr)
 }
 /**********************************************************
 Description: Get the current serial port automatic output status
-Parameters:  none   
+Parameters:  void   
 Return:      0x80 Detailed data is automatically output for each smoke detection
              0x81 only Simple data output
              0x00 does not automatically output data;
@@ -369,7 +368,7 @@ uint8_t BM22S2021_1::getAutoTx()
 }
 /**********************************************************
 Description: Get the level that the STATUS pin will output under the current alarm state
-Parameters:  none   
+Parameters:  void  
 Return:      0x80 HIGH level
              0x00 LOW level
 Others:
@@ -383,7 +382,7 @@ uint8_t BM22S2021_1::getStatusPinActiveMode()
 }
 /**********************************************************
 Description: get T0A calibration Top limits
-Parameters:  none
+Parameters:  void
              bottomlimit:Air calibration lower limit
 Return:      toplimit:Air calibration upper limit
 Others:
@@ -397,8 +396,7 @@ uint8_t BM22S2021_1::getT0ATopLimit()
 }
 /**********************************************************
 Description: get T0A calibration Top limits
-Parameters:  none
-             
+Parameters:  void
 Return:      bottomlimit:Air calibration lower limit
 Others:
 **********************************************************/
@@ -411,7 +409,7 @@ uint8_t BM22S2021_1::getT0ABottomLimit()
 }
 /**********************************************************
 Description: get T0B calibration Top limits
-Parameters:  none
+Parameters:  void
              bottomlimit:Air calibration lower limit
 Return:      toplimit:Air calibration upper limit
 Others:
@@ -425,8 +423,7 @@ uint8_t BM22S2021_1::getT0BTopLimit()
 }
 /**********************************************************
 Description: get T0B calibration Top limits
-Parameters:  none
-             
+Parameters:  void
 Return:      bottomlimit:Air calibration lower limit
 Others:
 **********************************************************/
@@ -439,7 +436,7 @@ uint8_t BM22S2021_1::getT0BBottomLimit()
 }
 /**********************************************************
 Description: get the alarm threshold of T0A channel
-Parameters:  none   
+Parameters:  void   
 Return:      Threshold:12bit valid data
 Others:
 **********************************************************/
@@ -454,7 +451,7 @@ uint16_t BM22S2021_1::getT0AThreshold()
 }
 /**********************************************************
 Description: get the alarm threshold of T0B channel
-Parameters:  none   
+Parameters:  void   
 Return:      Threshold:12bit valid data
 Others:
 **********************************************************/
@@ -469,7 +466,7 @@ uint16_t BM22S2021_1::getT0BThreshold()
 }
 /**********************************************************
 Description: Detection cycle of smoke-free environment equipment in standby, unit: s;
-Parameters:  none   
+Parameters:  void  
 Return:      cycle:time
 Others:
 **********************************************************/
@@ -517,7 +514,7 @@ uint8_t BM22S2021_1::calibrateModule()
 }
 /**********************************************************
 Description: Send instructions to reset the chip in the module
-Parameters:  none
+Parameters:  void
 Return:      1: module data acquisition failed, there is no correct feedback value
              0: Module data obtained successfully
 Others:     
@@ -550,7 +547,7 @@ Description: Send command to restore the module to factory settings
              4.Standby smoke detection cycle :  0x08
              5.Serial port automatic output:  0x80
              6.Alarm output level:0x80 HIGH
-Parameters:  none
+Parameters:  void
 Return:      1: Module setting failed without correct feedback value
              0: Module set successfully
 Others:
@@ -861,8 +858,8 @@ void  BM22S2021_1::wirteBytes(uint8_t wbuf[], uint8_t wlen)
 }
 /**********************************************************
 Description: eliminate buff data
-Parameters:  none
-Return:      none    
+Parameters:  void
+Return:      void    
 Others:      
 **********************************************************/ 
 

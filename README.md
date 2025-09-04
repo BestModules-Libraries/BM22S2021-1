@@ -5,7 +5,7 @@
 BM22S2021-1
 ===========================================================
 
-The Best Modules BM22S2021-1 is a smoke detector digital sensor, which uses the UART communication method. This document provides the description of the BM22S2021-1 Arduino Lib functions and how to install the Arduino Lib. The example uses BMA26M202 module to demonstrate the functions of alarm detection, smoke reading and air calibration etc.
+The Best Modules BM22S2021-1 is a smoke detector digital sensor, which uses the UART communication method. This document provides the description of the BM22S2021-1 Arduino Lib functions and how to install the Arduino Lib. The example uses BMA26M202/BMA26M202A module to demonstrate the functions of alarm detection, smoke reading and air calibration etc.
 
 #### Applicable types:
 <div align=center>
@@ -14,6 +14,7 @@ The Best Modules BM22S2021-1 is a smoke detector digital sensor, which uses the 
 |:---------:|:----------------------------:|
 |BM22S2021-1|Smoke detector digital sensor|
 |BMA26M202  | On-board BM22S2021-1 sensor |
+|BMA26M202A | On-board BM22S2021-1 sensor |
 
 </div> 
 
@@ -30,12 +31,15 @@ Repository Contents
 Documentation 
 -------------------
 
-* **[BM22S2021-1 Arduino Library V1.0.1 Description v100]( https://www.bestmodulescorp.com/bm22s2021-1.html#tab-product2 )** - Arduino Library Description.
+* **[BM22S2021-1 Arduino Library Description](https://www.bestmodulescorp.com/bm22s2021-1.html)** - Arduino Library Description.
 
 Version History  
 -------------------
 
-* **V1.0.1** - Initial public release.
+* **V1.0.1**
+&emsp;&emsp;- Initial public release.
+* **V1.0.2**  
+&emsp;&emsp;- Add applicable models: BMA26M202A; 
 
 License Information
 -------------------
@@ -44,8 +48,8 @@ This product is _**open source**_!
 
 Please review the LICENSE.md file for license information. 
 
-If you have any questions or concerns on licensing, please contact technical support on our BESTMODULES Email:service@bestmodulescorp.com
+If you have any questions or concerns on licensing, please contact technical support on our BEST MODULES CORP. Email:service@bestmodulescorp.com
 
 Distributed as-is; no warranty is given.
 
-BESTMODULES
+BEST MODULES CORP.
